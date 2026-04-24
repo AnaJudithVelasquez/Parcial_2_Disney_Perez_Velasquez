@@ -1,0 +1,442 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 50px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background: white;
+    height: 60px;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.disney-logo {
+    width: 80px;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #111;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.log-in {
+    font-size: 11px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.search-container input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 150px;
+    font-size: 13px;
+}
+
+
+.hero {
+    height: 85vh;
+    width: 100%;
+    
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.2)), 
+                url('images/banner-background.png');
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    align-items: center;
+    padding-left: 8%; 
+}
+
+.hero-content {
+    max-width: 420px;
+    color: white;
+}
+
+.title-img {
+    width: 100%;
+    max-width: 350px; 
+    margin-bottom: 20px;
+    display: block;
+}
+
+.tagline {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+
+.cta-group {
+    display: flex;
+    gap: 12px;
+}
+
+.btn {
+    padding: 12px 28px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.btn-red {
+    background-color: #db5243;
+    color: white;
+}
+
+.btn-outline {
+    border: 2px solid white;
+    color: white;
+    background: rgba(0,0,0,0.1);
+}
+
+
+
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px 8%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+.shop-section {
+    background-color: #6151a2; 
+    padding: 20px 0;
+}
+
+.shop-card {
+    background-color: #f1d570; 
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.shop-card:hover { transform: translateY(-5px); }
+
+.shop-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.shop-card-content {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.shop-card-content h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.shop-card-content p {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.shop-link {
+    font-size: 11px;
+    font-weight: bold;
+    color: #111;
+    text-decoration: none;
+    border-bottom: 2px solid #111;
+    align-self: center;
+}
+
+
+.disney-plus-section {
+    background-color: #034e56; 
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+.section-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.plus-card {
+    text-align: center;
+}
+
+.plus-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: outline 0.2s ease;
+}
+
+.plus-card img:hover {
+    outline: 4px solid #fff;
+}
+
+.plus-card p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    height: 40px; 
+}
+
+.plus-card a {
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+}
+
+
+.coming-soon-section {
+    padding: 60px 8%;
+    background: #fff;
+    text-align: center;
+}
+
+.section-title-dark {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.coming-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.coming-card img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.coming-card h4 {
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #111;
+}
+
+.coming-card p {
+    font-size: 11px;
+    color: #555;
+}
+
+
+.parks-section {
+    padding: 60px 8%;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.parks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.park-card {
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.park-card img {
+    width: 100%;
+    display: block;
+}
+
+.park-content {
+    padding: 20px;
+}
+
+.park-content h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.park-content p {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.park-content a {
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #111;
+    border-bottom: 2px solid #111;
+}
+
+
+.coming-card {
+    text-align: left;
+}
+
+.coming-card h4,
+.coming-card p {
+    padding-right: 10px;
+}
+
+.park-content h3 {
+    font-family: "Times New Roman", Georgia, serif;
+    font-style: italic;
+    font-size: 15px;
+    letter-spacing: 0.8px;
+    color: #444;
+}
+
+
+.disney-card-section {
+    background: url('images/more-background.jpeg') no-repeat center left;
+    background-size: cover;
+    padding: 80px 8%;
+}
+
+
+.card-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+
+.card-content {
+    max-width: 420px;
+    text-align: center;
+}
+
+
+.card-content h2 {
+    font-size: 22px;
+    color: #1a3c6e;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+
+.card-content h4 {
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #1a3c6e;
+}
+
+
+.card-content p {
+    font-size: 13px;
+    color: #2c2c2c;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+
+.card-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #7e57c2;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.disclaimer {
+    display: block;
+    font-size: 10px;
+    color: #555;
+    margin-top: 20px;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 40px 8%;
+    background: #fff;
+}
+
+.footer-logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    font-size: 11px;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-links.small a {
+    font-size: 10px;
+    color: #666;
+}
+
+.copyright {
+    font-size: 10px;
+    color: #777;
+}
